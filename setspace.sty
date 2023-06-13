@@ -546,6 +546,17 @@
   \restore@spacing
 }
 
+% double spacing lite is 2 x pt size, with less surrounding whitespace
+\newenvironment{doublespacelite}{%
+  \begingroup
+    \vspace{-0.8em}
+    \doublespacing
+}{%
+  \endgroup
+  \vskip -\parskip
+  \vskip -\baselineskip
+}
+
 % GT:  EMSH chose to omit display math part that follows.
 % She wrote (see above) that the "altered spacing before and after displayed
 % equations ... just looked too much".
